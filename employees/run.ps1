@@ -32,7 +32,7 @@ $csvobj = Import-Csv -Path ".\emp.csv"
 
 $retobj = $csvobj | Where-Object { $_.empid -eq $param}
 
-$retdata =  ConvertTo-Json $csvobj #ConvertTo-Json $TriggerMetadata # 
+# $retdata =  ConvertTo-Json $csvobj #ConvertTo-Json $TriggerMetadata # 
 # Write-Host  "csv obj $firstname"
 
 $retobj2= ConvertTo-Json $retobj
